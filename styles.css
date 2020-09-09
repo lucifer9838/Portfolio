@@ -193,14 +193,14 @@ transform: rotateZ(3deg)
         }
         .Intro h1{
             position: relative;
-            top: -15%;
+            top: -3%;
             left: 3%;
             color: var(--color-text);
             font-size:20px;
         }
         .Intro h3{
             position: relative;
-            top: -17%;
+            top: -3%;
             left: 3%;
             color: var(--color-text);
             font-size: 10px;
