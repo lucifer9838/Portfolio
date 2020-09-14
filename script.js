@@ -62,10 +62,17 @@ let trans=()=>{
 }
 
 
-const counterVisit=document.getElementsByClassName('counter');
-updatevisitcount();
-function(){
-    fetch('https://api.countapi.xyz/update/hassan-ahmad/portfolio/?amount=1')
-    .then(res => res.json())
-    .then(res =>{counterVisit.innerHTML=res.value;});
+const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/hassan-ahmad/portfolio/?amount=1')
+	.then(res => res.json())
+    .then(data =>console.log(data)) 
+        
+    //     {
+	// 	countEl.innerHTML = res.value;
+    // })
+   
 }
