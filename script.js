@@ -62,17 +62,15 @@ let trans=()=>{
 }
 
 
-const countEl = document.getElementById('count');
+const countEl = document.getElementById('counter');
 
 updateVisitCount();
 
 function updateVisitCount() {
 	fetch('https://api.countapi.xyz/update/hassan-ahmad/portfolio/?amount=1')
 	.then(res => res.json())
-    .then(data =>console.log(data)) 
-        
-    //     {
-	// 	countEl.innerHTML = res.value;
-    // })
-   
+       .then(res => {
+		countEl.innerHTML = res.value;
+	})
 }
+   
